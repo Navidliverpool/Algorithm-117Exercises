@@ -18,7 +18,20 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Forth: {0}", Forth(211));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("Fifth: {0}", Fifth("else"));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
+        }
+
+        private static string Fifth(string str)
+        {
+            string newStr = " ";
+            if (str.StartsWith("if"))
+                return str;
+
+            newStr = "if " + str;
+            return newStr;
+
         }
 
         //Az khodam neveshtam Forth ro
