@@ -26,9 +26,27 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Seventh: {0}", Seventh("abcd"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("Eighth: {0}", Eighth("JS"));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
+        private static string Eighth(string s)
+        {
+            string newSs = "";
+            if(s.Length <= 2)
+            {
+                newSs = s + s + s + s;
+                return newSs;
+            }
+
+            return  s[0].ToString() + s[1].ToString() + s[0].ToString() + s[1].ToString() +
+                   s[0].ToString() + s[1].ToString() + s[0].ToString() + s[1].ToString();
+        }
+
+
+
+        //Khodam neveshtam baa search kardan
         private static string Seventh(string s)
         {
             string newS = " ";
