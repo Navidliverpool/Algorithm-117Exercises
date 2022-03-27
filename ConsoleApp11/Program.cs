@@ -28,9 +28,18 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Eighth: {0}", Eighth("JS"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("Eighth2: {0}", Eighth2("js"));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
+        //Az "Click me to see the sample solution" tu hamin website neveshtam
+        private static string Eighth2(string s)
+        {
+            return s.Length < 2 ? s : s.Substring(0, 2) + s.Substring(0, 2) + s.Substring(0, 2) + s.Substring(0, 2);
+        }
+
+        //Khodam neveshtam baa search kardan
         private static string Eighth(string s)
         {
             string newSs = "";
