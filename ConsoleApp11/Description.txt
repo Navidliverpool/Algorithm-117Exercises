@@ -1,0 +1,6 @@
+﻿Link of the questions: https://www.w3resource.com/cpp-exercises/basic-algorithm/index.php
+-----------------------------------------------------------------------------------------
+
+Hamed in link ro baram ferestaad baraye tamrine algoritm.
+Codhaye asli tuye website ba c++ neveshteh shodan.
+Betartib har algoritmi ke hal mikonam esmeshro mizaram shomareye soali ke soal hastesh. Masalan esme algoritme avali ro ke neveshtam gozashtam First.
