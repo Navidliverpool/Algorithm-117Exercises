@@ -20,21 +20,46 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Fifth: {0}", Fifth("else"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("Fifth2: {0}", Fifth2("else"));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("Sixth: {0}", Sixth("Python", 1));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
-        private static string Fifth(string str)
+        private static string Sixth(string s, int i)
         {
-            string newStr = " ";
-            if (str.StartsWith("if"))
-                return str;
+            char[] chr = s.ToCharArray();
+            string newS = " ";
+            string iToStr = chr[i].ToString();
+            newS = s.Replace(iToStr, string.Empty);
+            return newS;
+        }
 
-            newStr = "if " + str;
-            return newStr;
+
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam
+        private static string Fifth2(string s)
+        {
+            if (s.Length > 2 & s.Substring(0, 2) == "if")
+                return s;
+
+            return "if " + s;
+        }
+
+        //Az khodam neveshtam
+        private static string Fifth(string s)
+        {
+            string newS = " ";
+            if (s.StartsWith("if"))
+                return s;
+
+            newS = "if " + s;
+            return newS;
 
         }
 
-        //Az khodam neveshtam Forth ro
+        //Az khodam neveshtam
         private static bool Forth(int n)
         {
             if(n - 100 >= 0)
