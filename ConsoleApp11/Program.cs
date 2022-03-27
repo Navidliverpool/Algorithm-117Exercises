@@ -11,8 +11,21 @@ namespace ConsoleApp11
         static void Main(string[] args)
         {
             Console.WriteLine(First(2, 2));
+            Console.WriteLine("---------------------------");
             Console.WriteLine(Second(53));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine(Third(30, 0));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
+        }
+
+        private static bool Third(int n1, int n2)
+        {
+            if (n1 == 30 || n1 + n2 == 30)
+                return true;
+            else
+                return false;
+
         }
 
         private static int Second(int n)
