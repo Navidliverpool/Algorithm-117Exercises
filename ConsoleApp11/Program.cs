@@ -24,9 +24,23 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Sixth: {0}", Sixth("Python", 1));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("Seventh: {0}", Seventh("abcd"));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
+        private static string Seventh(string s)
+        {
+            string newS = " ";
+            char[] chr = s.ToCharArray();
+            char temp = chr[0];
+            chr[0] = chr[chr.Length - 1];
+            chr[chr.Length - 1] = temp;
+            return new string(chr);
+
+        }
+
+        //Khodam neveshtam
         private static string Sixth(string s, int i)
         {
             char[] chr = s.ToCharArray();
@@ -47,7 +61,7 @@ namespace ConsoleApp11
             return "if " + s;
         }
 
-        //Az khodam neveshtam
+        //Khodam neveshtam
         private static string Fifth(string s)
         {
             string newS = " ";
@@ -59,7 +73,7 @@ namespace ConsoleApp11
 
         }
 
-        //Az khodam neveshtam
+        //Khodam neveshtam
         private static bool Forth(int n)
         {
             if(n - 100 >= 0)
@@ -77,6 +91,7 @@ namespace ConsoleApp11
             return false;
         }
 
+        //Khodam neveshtam
         private static bool Third(int n1, int n2)
         {
             if (n1 == 30 || n1 + n2 == 30)
@@ -86,6 +101,7 @@ namespace ConsoleApp11
 
         }
 
+        //Khodam neveshtam
         private static int Second(int n)
         {
             int result = 0;
@@ -96,6 +112,7 @@ namespace ConsoleApp11
             return result;
         }
 
+        //Khodam neveshtam
         private static int First(int num1, int num2)
         {
             int result;
