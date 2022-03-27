@@ -16,15 +16,25 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Third: {0}", Third(30, 0));
             Console.WriteLine("---------------------------");
-            Console.WriteLine("Forth: {0}", Forth(89));
+            Console.WriteLine("Forth: {0}", Forth(211));
             Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
+        //Az khodam neveshtam Forth ro
         private static bool Forth(int n)
         {
-            if ((n - 100) <= 10 || (n - 100) >= -10 || (n - 200) <= 10 || (n - 200) >= -10)
-                return true;
+            if(n - 100 >= 0)
+            {
+                if ((n - 100) <= 10 || (n - 200) <= 10)
+                    return true;
+            }
+
+            if((n - 100) < 0)
+            {
+                if ((n - 100) >= -10 || (n - 200) <= -10)
+                    return true;
+            }
 
             return false;
         }
