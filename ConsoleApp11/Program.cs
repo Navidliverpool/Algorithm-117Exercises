@@ -34,7 +34,17 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Ninth2: {0}", Ninth2("1"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("Tenth: {0}", Tenth(14));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
+        }
+
+        private static bool Tenth(int n)
+        {
+            if(n % 3 == 0 || n % 7 == 0 & n >= 0)
+                return true;
+            return false;
+
         }
 
 
