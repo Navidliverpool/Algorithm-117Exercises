@@ -44,10 +44,18 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Twelfth2: {0}", Twelfth2("C# Python"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("Thirteen: {0}", Thirteen(120, -1));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
 
+
+        //Khodam neveshtam
+        private static bool Thirteen(int n1, int n2)
+        {
+            return (n1 > 0 & n2 > 0) == false;
+        }
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam
         private static bool Twelfth2(string s)
