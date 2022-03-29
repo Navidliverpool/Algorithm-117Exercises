@@ -30,8 +30,18 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Eighth2: {0}", Eighth2("js"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("Ninth: {0}", Ninth("1"));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
+
+        private static string Ninth(string s)
+        {
+            string newS = "";
+            return newS = s[s.Length - 1] + s + s[s.Length - 1];
+        }
+
+
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam
         private static string Eighth2(string s)
