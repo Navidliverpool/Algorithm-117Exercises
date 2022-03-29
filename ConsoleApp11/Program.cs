@@ -46,10 +46,18 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Thirteen: {0}", Thirteen(120, -1));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("Fourteenth: {0}", Fourteenth(100, 199));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
 
+
+        //Khodam neveshtam
+        private static bool Fourteenth(int n1, int n2)
+        {
+            return (n1 >= 100 & n2 <= 200) || (n2 >= 100 & n1 <= 200);
+        }
 
         //Khodam neveshtam
         private static bool Thirteen(int n1, int n2)
