@@ -40,15 +40,41 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Eleventh: {0}", Eleventh("Python"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("Twelfth: {0}", Twelfth("C#Python"));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("Twelfth2: {0}", Twelfth2("C# Python"));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
 
 
+        //Az "Click me to see the sample solution" tu hamin website neveshtam
+        private static bool Twelfth2(string s)
+        {
+            return (s.Length < 3 & s == "C#") || (s.Substring(0, 2) == "C#" & s[2] == ' ');
+        }
+
+        //Khodam neveshtam
+        private static bool Twelfth(string s)
+        {
+            if (s.StartsWith("C#"))
+                return true;
+            return false;
+        }
+
+
+
+        //Khodam neveshtam baa search kardan
         private static string Eleventh(string s)
         {
-            string newS = s.Substring(0, 3);
-            return newS + s + newS;
+            if (s.Length < 3)
+                return s + s + s;
+            else
+            {
+                string newS = s.Substring(0, 3);
+                return newS + s + newS;
+            }            
         }
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam
@@ -57,7 +83,7 @@ namespace ConsoleApp11
             return n % 3 == 0 || n % 7 == 0;
         }
 
-        //Khodam neveshtam baa search kardan
+        //Khodam neveshtam
         private static bool Tenth(int n)
         {
             if(n % 3 == 0 || n % 7 == 0 & n >= 0)
@@ -73,7 +99,7 @@ namespace ConsoleApp11
             return newS + s + newS;
         }
 
-        //Khodam neveshtam baa search kardan
+        //Khodam neveshtam
         private static string Ninth(string s)
         {
             string newS = "";
