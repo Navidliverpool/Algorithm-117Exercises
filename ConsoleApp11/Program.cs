@@ -52,12 +52,20 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Sixteenth: {0}", Sixteenth(11, 19));
             Console.WriteLine("---------------------------");
-            Console.WriteLine(": {0}", (11, 19));
+            Console.WriteLine("Seventeenth: {0}", Seventeenth("ytPython"));
             Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
-
+        private static string Seventeenth(string s)
+        {
+            string newS = "";
+            if (s.StartsWith("yt"))
+                newS = s.Remove(0, 2);
+            else
+                return s;
+            return newS;
+        }
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam
         private static bool Sixteenth(int x, int y)
@@ -104,8 +112,6 @@ namespace ConsoleApp11
             return false;
         }
 
-
-
         //Khodam neveshtam baa search kardan
         private static string Eleventh(string s)
         {
@@ -147,8 +153,6 @@ namespace ConsoleApp11
             return newS = s[s.Length - 1] + s + s[s.Length - 1];
         }
 
-
-
         //Az "Click me to see the sample solution" tu hamin website neveshtam
         private static string Eighth2(string s)
         {
@@ -169,8 +173,6 @@ namespace ConsoleApp11
                    s[0].ToString() + s[1].ToString() + s[0].ToString() + s[1].ToString();
         }
 
-
-
         //Khodam neveshtam baa search kardan
         private static string Seventh(string s)
         {
@@ -180,7 +182,6 @@ namespace ConsoleApp11
             chr[0] = chr[chr.Length - 1];
             chr[chr.Length - 1] = temp;
             return new string(chr);
-
         }
 
         //Khodam neveshtam
@@ -192,8 +193,6 @@ namespace ConsoleApp11
             newS = s.Replace(iToStr, string.Empty);
             return newS;
         }
-
-
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam
         private static string Fifth2(string s)
@@ -213,7 +212,6 @@ namespace ConsoleApp11
 
             newS = "if " + s;
             return newS;
-
         }
 
         //Khodam neveshtam
@@ -241,7 +239,6 @@ namespace ConsoleApp11
                 return true;
             else
                 return false;
-
         }
 
         //Khodam neveshtam
@@ -264,7 +261,5 @@ namespace ConsoleApp11
             else
                 return result = num1 + num2;
         }
-
-
     }
 }
