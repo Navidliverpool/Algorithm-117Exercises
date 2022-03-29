@@ -32,9 +32,21 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Ninth: {0}", Ninth("1"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("Ninth2: {0}", Ninth2("1"));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
+
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam
+        private static string Ninth2(string s)
+        {
+            string newS = s.Substring(s.Length - 1);
+            return newS + s + newS;
+        }
+
+        //Khodam neveshtam baa search kardan
         private static string Ninth(string s)
         {
             string newS = "";
