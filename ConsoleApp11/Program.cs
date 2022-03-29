@@ -50,7 +50,17 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Fifteenth: {0}", Fifteenth(11, 20, 62));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("Fifteenth2: {0}", Fifteenth2(11, 20, 62));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
+        }
+
+
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam
+        private static bool Fifteenth2(int v1, int v2, int v3)
+        {
+            return (v1 >= 20 & v1 <= 50) || (v2 >= 20 & v2 <= 50) || (v3 >= 20 & v3 <= 50);
         }
 
         //Khodam neveshtam
