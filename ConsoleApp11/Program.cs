@@ -52,16 +52,26 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Sixteenth: {0}", Sixteenth(11, 19));
             Console.WriteLine("---------------------------");
-            Console.WriteLine("Seventeenth: {0}", Seventeenth("ytPython"));
+            Console.WriteLine("Seventeenth: {0}", Seventeenth("Python"));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("Seventeenth2: {0}", Seventeenth2("Python"));
             Console.WriteLine("---------------------------");
             Console.ReadLine();
+        }
+
+
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam
+        private static string Seventeenth2(string s)
+        {
+            return s.Substring(1, 2) == "yt" ? s.Remove(1, 2) : s;
         }
 
         private static string Seventeenth(string s)
         {
             string newS = "";
-            if (s.StartsWith("yt"))
-                newS = s.Remove(0, 2);
+            if (s.Substring(1, 2) == "yt")
+                newS = s.Remove(1, 2);
             else
                 return s;
             return newS;
