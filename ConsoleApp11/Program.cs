@@ -36,9 +36,28 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Tenth: {0}", Tenth(14));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("Tenth2: {0}", Tenth2(11));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("Eleventh: {0}", Eleventh("Python"));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
+
+
+        private static string Eleventh(string s)
+        {
+            string newS = s.Substring(0, 3);
+            return newS + s + newS;
+        }
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam
+        private static bool Tenth2(int n)
+        {
+            return n % 3 == 0 || n % 7 == 0;
+        }
+
+        //Khodam neveshtam baa search kardan
         private static bool Tenth(int n)
         {
             if(n % 3 == 0 || n % 7 == 0 & n >= 0)
@@ -46,8 +65,6 @@ namespace ConsoleApp11
             return false;
 
         }
-
-
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam
         private static string Ninth2(string s)
