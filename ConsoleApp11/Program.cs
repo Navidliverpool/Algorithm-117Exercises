@@ -48,14 +48,22 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Fourteenth: {0}", Fourteenth(100, 199));
             Console.WriteLine("---------------------------");
-            Console.WriteLine("Fifteenth: {0}", Fifteenth(11, 20, 62));
-            Console.WriteLine("---------------------------");
             Console.WriteLine("Fifteenth2: {0}", Fifteenth2(11, 20, 62));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("Sixteenth: {0}", Sixteenth(11, 19));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine(": {0}", (11, 19));
             Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
 
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam
+        private static bool Sixteenth(int x, int y)
+        {
+            return (x <= 20 || y >= 50) || (y <= 20 || x >= 50);
+        }
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam
         private static bool Fifteenth2(int v1, int v2, int v3)
@@ -64,10 +72,11 @@ namespace ConsoleApp11
         }
 
         //Khodam neveshtam
-        private static bool Fifteenth(int v1, int v2, int v3)
-        {
-            return (v1 < 20 & v1 > 50) || (v2 < 20 & v2 > 50) || (v3 < 20 & v3 > 50) == false;
-        }
+        //private static bool Fifteenth(int v1, int v2, int v3)
+        //{
+              //Ghalate. Kar nemikone. return baadesh tu hamun khat == ba false gharar bedam kar nemikone.
+        //    return (v1 < 20 || v1 > 50) || (v2 < 20 || v2 > 50) || (v3 < 20 || v3 > 50) == false;
+        //}
 
         //Khodam neveshtam
         private static bool Fourteenth(int n1, int n2)
