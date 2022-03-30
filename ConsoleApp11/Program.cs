@@ -62,11 +62,19 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Ninteenth2: {0}", Ninteenth2(102, 95));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("Twentieth: {0}", Twentieth(78, 95));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
 
 
+        private static int Twentieth(int v1, int v2)
+        {
+            return (v1 >= 40 & v1 <= 60) & (v2 >= 40 & v2 <= 60) ? 1 : 0;
+        }
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam
         private static int Ninteenth2(int v1, int v2)
         {
             const int n = 100;
