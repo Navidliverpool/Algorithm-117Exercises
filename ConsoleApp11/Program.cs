@@ -68,11 +68,40 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("TwentyFirst: {0}", TwentyFirst(21, 25));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("TwentyFirst2: {0}", TwentyFirst2(21, 25));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
 
 
+        //Az "Click me to see the sample solution" tu hamin website neveshtam
+        private static int TwentyFirst2(int x, int y)
+        {
+            if (x >= 20 && x <= 30 && y >= 20 && y <= 30)
+            {
+                if (x >= y)
+                {
+                    return x;
+                }
+                else
+                {
+                    return y;
+                }
+            }
+            else if (x >= 20 && y <= 30)
+            {
+                return x;
+            }
+            else if (y >= 20 && y <= 30)
+            {
+                return y;
+            }
+            else
+            {
+                return 0;
+            }
+        }
 
         //Khodam neveshtam ba ye negahe kuchick andakhtan be "Click me to see the sample solution". Albate "Click me to see the sample solution" yejure dige neveshte.
         private static int TwentyFirst(int v1, int v2)
