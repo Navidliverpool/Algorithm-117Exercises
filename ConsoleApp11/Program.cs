@@ -70,7 +70,21 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("TwentyFirst2: {0}", TwentyFirst2(21, 25));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("TwentySecond: {0}", TwentySecond("fizz"));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
+        }
+
+        private static bool TwentySecond(string s)
+        {
+            int a = 0;
+            for(int i = 0; i <= s.Length - 1; i++)
+            {
+                if(s[i] == 'z')
+                    a++;
+            }
+
+            return (a >= 2 & a <= 4) ? true : false;
         }
 
 
