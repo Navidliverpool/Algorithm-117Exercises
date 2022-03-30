@@ -66,7 +66,22 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Twentieth2: {0}", Twentieth2(40, 42));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("TwentyFirst: {0}", TwentyFirst(21, 25));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
+        }
+
+
+
+
+        //Khodam neveshtam ba ye negahe kuchick andakhtan be "Click me to see the sample solution". Albate "Click me to see the sample solution" yejure dige neveshte.
+        private static int TwentyFirst(int v1, int v2)
+        {
+            if((v1 >= 20 & v1 <= 30) & (v2 >= 20 & v2 <= 30))
+            {
+                return (v1 > v2) ? v1 : v2;
+            }
+            return 0;
         }
 
         private static bool Twentieth2(int x, int y)
