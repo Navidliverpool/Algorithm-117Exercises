@@ -56,10 +56,37 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Seventeenth2: {0}", Seventeenth2("Python"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("Eighteenth: {0}", Eighteenth(1,2,3));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("Ninteenth: {0}", Ninteenth(78, 95));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
 
+
+        //Khodam neveshtam
+        private static int Ninteenth(int v1, int v2)
+        {
+            if ((v1 > 0 & v1 < 100) & (v2 > 0 & v2 < 100))
+            {
+                if (v1 > v2)
+                    return v1;
+                if (v2 > v1)
+                    return v2;
+                if (v1 == v2)
+                    return 0;
+            }
+            return 0;
+        }
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam
+        private static int Eighteenth(int v1, int v2, int v3)
+        {
+            int result = Math.Max(v1, Math.Max(v2, v3));
+            return result;
+
+        }
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam
         private static string Seventeenth2(string s)
@@ -67,6 +94,7 @@ namespace ConsoleApp11
             return s.Substring(1, 2) == "yt" ? s.Remove(1, 2) : s;
         }
 
+        //Yejurai khodam neveshtam.
         private static string Seventeenth(string s)
         {
             string newS = "";
