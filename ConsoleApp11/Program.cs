@@ -64,11 +64,17 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Twentieth: {0}", Twentieth(78, 95));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("Twentieth2: {0}", Twentieth2(40, 42));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
+        private static bool Twentieth2(int x, int y)
+        {
+            return (x >= 40 && x <= 50 && y >= 40 && y <= 50) || (x >= 50 && x <= 60 && y >= 50 && y <= 60);
+        }
 
-
+        //Khodam neveshtam
         private static int Twentieth(int v1, int v2)
         {
             return (v1 >= 40 & v1 <= 60) & (v2 >= 40 & v2 <= 60) ? 1 : 0;
