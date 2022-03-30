@@ -60,12 +60,23 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Ninteenth: {0}", Ninteenth(78, 95));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("Ninteenth2: {0}", Ninteenth2(102, 95));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
 
 
-        //Khodam neveshtam
+        private static int Ninteenth2(int v1, int v2)
+        {
+            const int n = 100;
+            int val = Math.Abs(v1 - n);
+            int val2 = Math.Abs(v2 - n);
+
+            return val == val2 ? 0 : (val < val2 ? v1 : v2);
+        }
+
+        //Khodam neveshtam. Darvaghe ghalate yejurai. Aadaade ballaye 100 ham ok hast estefadeh beshan. Roju shavad be Ninteenth2 baraye javabe sahih.
         private static int Ninteenth(int v1, int v2)
         {
             if ((v1 > 0 & v1 < 100) & (v2 > 0 & v2 < 100))
