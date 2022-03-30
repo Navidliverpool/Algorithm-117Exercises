@@ -75,6 +75,7 @@ namespace ConsoleApp11
             Console.ReadLine();
         }
 
+        //Khodam neveshtam. Idehye for loop neveshtan ro az StackOverFlow.com gereftam.
         private static bool TwentySecond(string s)
         {
             int a = 0;
@@ -86,8 +87,6 @@ namespace ConsoleApp11
 
             return (a >= 2 & a <= 4) ? true : false;
         }
-
-
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam
         private static int TwentyFirst2(int x, int y)
