@@ -72,7 +72,21 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("TwentySecond: {0}", TwentySecond("fizz"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("TwentyThird: {0}", TwentyThird(123, 453));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
+        }
+
+        private static bool TwentyThird(int v1, int v2)
+        {
+            char[] v1ChrArr = v1.ToString().ToCharArray();
+            char[] v2ChrArr = v2.ToString().ToCharArray();
+            if (v1 > 0 & v2 > 0)
+            {
+                if (v1ChrArr[v1ChrArr.Length - 1] == v2ChrArr[v2ChrArr.Length - 1])
+                    return true;
+            }
+            return false;
         }
 
         //Khodam neveshtam. Idehye for loop neveshtan ro az StackOverFlow.com gereftam.
