@@ -76,16 +76,32 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("TwentyThird2: {0}", TwentyThird2(123, 453));
             Console.WriteLine("---------------------------");
-            Console.WriteLine("TwentyFourth: {0}", TwentyFourth(123, 453));
+            Console.WriteLine("TwentyFourth: {0}", TwentyFourth("JS", 3));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("TwentyFourth2: {0}", TwentyFourth2("JS", 3));
             Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
-
-
-        private static int TwentyFourth(int v1, int v2)
+        private static string TwentyFourth2(string s, int n)
         {
+            string result = "";
+            for (int i = 0; i < n; i++)
+            {
+                result += s;
+            }
+            return result;
+        }
 
+        //Khodam neveshtam
+        private static string TwentyFourth(string s, int v)
+        {
+            string newS = "";
+            for(int i = 1; i <= v; i++)
+            {
+                newS += s;
+            }
+            return newS;
         }
 
         //Khodam neveshtam. Idehye for loop neveshtan ro az StackOverFlow.com gereftam.
