@@ -74,9 +74,27 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("TwentyThird: {0}", TwentyThird(123, 453));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("TwentyThird2: {0}", TwentyThird2(123, 453));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("TwentyFourth: {0}", TwentyFourth(123, 453));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
+
+
+        private static int TwentyFourth(int v1, int v2)
+        {
+
+        }
+
+        //Khodam neveshtam. Idehye for loop neveshtan ro az StackOverFlow.com gereftam.
+        private static bool TwentyThird2(int v1, int v2)
+        {
+            return Math.Abs(v1 % 10) == (v2 % 10);
+        }
+
+        //Khodam neveshtam
         private static bool TwentyThird(int v1, int v2)
         {
             char[] v1ChrArr = v1.ToString().ToCharArray();
