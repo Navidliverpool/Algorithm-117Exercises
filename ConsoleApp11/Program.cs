@@ -82,9 +82,32 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("TwentyFifth: {0}", TwentyFifth("Python", 2));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("TwentyFifth2: {0}", TwentyFifth2("Python", 2));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
+        private static string TwentyFifth2(string s, int n)
+        {
+            string result = "";
+            int frontOfString = 3;
+
+            if (frontOfString > s.Length)
+                frontOfString = s.Length;
+
+            string front = s.Substring(0, frontOfString);
+
+            for (int i = 0; i < n; i++)
+            {
+                result += front;
+            }
+            return result;
+        }
+
+
+
+
+        //Khodam neveshtam
         private static string TwentyFifth(string s, int n)
         {
             string newS = "";
