@@ -80,9 +80,30 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("TwentyFourth2: {0}", TwentyFourth2("JS", 3));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("TwentyFifth: {0}", TwentyFifth("Python", 2));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
+        private static string TwentyFifth(string s, int n)
+        {
+            string newS = "";
+            if(s.Length - 1 >= n)
+            {
+                for (int i = 0; i <= n; i++)
+                {
+                    newS += s[i];
+                }
+            }
+            
+            for(int j = 1; j < n; j++)
+            {
+                newS += newS;
+            }
+            return newS;
+        }
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam
         private static string TwentyFourth2(string s, int n)
         {
             string result = "";
@@ -104,7 +125,7 @@ namespace ConsoleApp11
             return newS;
         }
 
-        //Khodam neveshtam. Idehye for loop neveshtan ro az StackOverFlow.com gereftam.
+        //Az "Click me to see the sample solution" tu hamin website neveshtam
         private static bool TwentyThird2(int v1, int v2)
         {
             return Math.Abs(v1 % 10) == (v2 % 10);
