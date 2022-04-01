@@ -92,10 +92,22 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("TwentySeventh: {0}", TwentySeventh("bbaaacaag"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("TwentySeventh2: {0}", TwentySeventh2("bbaaacaag"));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
-
+        private static bool TwentySeventh2(string str)
+        {
+            int counter = 0;
+            for (int i = 0; i < str.Length - 1; i++)
+            {
+                if (str[i] == 'a') counter++;
+                if (str.Substring(i, 2) == "aa" && counter < 2)
+                    return true;
+            }
+            return false;
+        }
 
         //Khodam neveshtam
         private static bool TwentySeventh(string s)
