@@ -88,12 +88,28 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("TwentySixth: {0}", TwentySixth("bbaaacaag"));
             Console.WriteLine("---------------------------");
-            Console.WriteLine("TwentySixthPractice: {0}", TwentySixth2("bbaaacaag"));
+            Console.WriteLine("TwentySixth2: {0}", TwentySixth2("bbaaacaag"));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("TwentySeventh: {0}", TwentySeventh("bbaaacaag"));
             Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
 
+
+        //Khodam neveshtam
+        private static bool TwentySeventh(string s)
+        {
+            int i = 0;
+            while(i < s.Length - 1)
+            {
+                if (s[i] == 'a' & s[i + 1] == 'a')
+                    return true;
+                i++;
+            }
+
+            return false;
+        }
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam.
         private static int TwentySixth2(string s)
