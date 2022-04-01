@@ -88,13 +88,27 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("TwentySixth: {0}", TwentySixth("bbaaacaag"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("TwentySixthPractice: {0}", TwentySixthPractice("bbaaacaag"));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
+        }
+
+        private static int TwentySixthPractice(string s)
+        {
+            var t = s.Contains('a').ToString().Count();
+            for (int i = 0; i < s.Length - 1; i++)
+            {
+
+            }
+
+                return 0;
         }
 
         //Khodam neveshtam
         private static int TwentySixth(string s)
         {
             int counter = 0;
+            int c = 0;
             for (int i = 0; i < s.Length - 1; i++)
             {
                 if(i != 0)
@@ -102,11 +116,15 @@ namespace ConsoleApp11
                     if (s[i] == 'a' & s[i - 1] == 'a')
                     {
                         if (s[i + 1] != 'a')
+                        {
+                            c++;
+                        }
+                        else
                             counter++;
                     }
                 }
             }
-                return counter;
+                return counter + c;
         }
 
         //TwentyFifth2Practice.
