@@ -84,9 +84,27 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("TwentyFifth2: {0}", TwentyFifth2("Python", 2));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("TwentyFifth2Practice: {0}", TwentyFifth2Practice("Python", 2));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
+        //TwentyFifth2Practice.
+        private static string TwentyFifth2Practice(string s, int n)
+        {
+            string newS = "";
+            int n2 = 3;
+            if (s.Length < n2)
+                n2 = s.Length;
+            newS = s.Substring(0, 3);
+            for(int i = 1; i < n; i++)
+            {
+                newS += newS;
+            }
+            return newS;
+        }
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam
         private static string TwentyFifth2(string s, int n)
         {
             string result = "";
@@ -104,10 +122,7 @@ namespace ConsoleApp11
             return result;
         }
 
-
-
-
-        //Khodam neveshtam
+        //Khodam neveshtam. Alan ke daram be kode TwentyFifth2 negah mikonam mibinam bazi az jahaye in code moshkel dare. 
         private static string TwentyFifth(string s, int n)
         {
             string newS = "";
