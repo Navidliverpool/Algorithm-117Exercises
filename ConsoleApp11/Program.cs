@@ -86,7 +86,27 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("TwentyFifth2Practice: {0}", TwentyFifth2Practice("Python", 2));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("TwentySixth: {0}", TwentySixth("bbaaacaag"));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
+        }
+
+        //Khodam neveshtam
+        private static int TwentySixth(string s)
+        {
+            int counter = 0;
+            for (int i = 0; i < s.Length - 1; i++)
+            {
+                if(i != 0)
+                {
+                    if (s[i] == 'a' & s[i - 1] == 'a')
+                    {
+                        if (s[i + 1] != 'a')
+                            counter++;
+                    }
+                }
+            }
+                return counter;
         }
 
         //TwentyFifth2Practice.
