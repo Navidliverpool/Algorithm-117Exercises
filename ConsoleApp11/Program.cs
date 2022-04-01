@@ -88,20 +88,25 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("TwentySixth: {0}", TwentySixth("bbaaacaag"));
             Console.WriteLine("---------------------------");
-            Console.WriteLine("TwentySixthPractice: {0}", TwentySixthPractice("bbaaacaag"));
+            Console.WriteLine("TwentySixthPractice: {0}", TwentySixth2("bbaaacaag"));
             Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
-        private static int TwentySixthPractice(string s)
+
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static int TwentySixth2(string s)
         {
-            var t = s.Contains('a').ToString().Count();
+            int ctr_aa = 0;
             for (int i = 0; i < s.Length - 1; i++)
             {
-
+                if (s.Substring(i, 2) == "aa")
+                {
+                    ctr_aa++;
+                }
             }
-
-                return 0;
+            return ctr_aa;
         }
 
         //Khodam neveshtam
@@ -116,9 +121,7 @@ namespace ConsoleApp11
                     if (s[i] == 'a' & s[i - 1] == 'a')
                     {
                         if (s[i + 1] != 'a')
-                        {
                             c++;
-                        }
                         else
                             counter++;
                     }
