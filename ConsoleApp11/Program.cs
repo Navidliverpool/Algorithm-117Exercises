@@ -100,10 +100,35 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("TwentyNinth: {0}", TwentyNinth("abcd"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("TwentyNinth2: {0}", TwentyNinth2("abcd"));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("Thirty: {0}", Thirty("abcdsab"));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
+        private static int Thirty(string s)
+        {
+            string newS = s.Substring(0, 2);
+            int counter = 0;
+            for (int i = 0; i < s.Length - 3; i++)
+            {
+                if (s[i] == newS[0] & s[i + 1] == newS[1])
+                    counter++;
+            }
+            return counter;
+        }
 
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static string TwentyNinth2(string str)
+        {
+            string result = "";
+            for (int i = 0; i < str.Length; i++)
+            {
+                result += str.Substring(0, i + 1);
+            }
+            return result;
+        }
 
         //Khodam neveshtam
         private static string TwentyNinth(string s)
