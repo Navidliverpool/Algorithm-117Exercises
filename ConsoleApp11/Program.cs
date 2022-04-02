@@ -104,9 +104,24 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Thirty: {0}", Thirty("abcdsab"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("Thirty2: {0}", Thirty2("abcdsab"));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
+        private static int Thirty2(string str)
+        {
+            string last_two_char = str.Substring(str.Length - 2);
+            int ctr = 0;
+
+            for (int i = 0; i < str.Length - 2; i++)
+            {
+                if (str.Substring(i, 2) == (last_two_char)) ctr++;
+            }
+            return ctr;
+        }
+
+        //Khodam neveshtam
         private static int Thirty(string s)
         {
             string newS = s.Substring(0, 2);
