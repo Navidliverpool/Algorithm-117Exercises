@@ -98,7 +98,24 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("TwentyEighth2: {0}", TwentyEighth2("Python"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("TwentyNinth: {0}", TwentyNinth("abcd"));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
+        }
+
+
+
+        //Khodam neveshtam
+        private static string TwentyNinth(string s)
+        {
+            string newS = "";
+            int k = 1;
+            while(k <= s.Length - 1)
+            {
+                newS += s.Substring(0, k);
+                k++;
+            }
+            return newS + s;
         }
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam.
