@@ -94,9 +94,36 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("TwentySeventh2: {0}", TwentySeventh2("bbaaacaag"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("TwentyEighth: {0}", TwentyEighth("Python"));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("TwentyEighth2: {0}", TwentyEighth2("Python"));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static string TwentyEighth2(string s)
+        {
+            string result = " ";
+            for (int i = 0; i < s.Length - 1; i++)
+            {
+                if (i % 2 == 0) result += s[i];
+            }
+            return result;
+        }
+
+        //Khodam neveshtam
+        private static string TwentyEighth(string s)
+        {
+            string newS = "";
+            for(int i = 0; i < s.Length - 1; i += 2)
+            {
+                newS += s[i];
+            }
+            return newS;
+        }
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
         private static bool TwentySeventh2(string str)
         {
             int counter = 0;
