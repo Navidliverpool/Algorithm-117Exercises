@@ -112,9 +112,37 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("ThirtySecond: {0}", ThirtySecond("abcdefgh", "abijsklm"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("ThirtySecond2: {0}", ThirtySecond2("abcdefgh", "abijsklm"));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("ThirtyThird: {0}", ThirtyThird("xxHxix", 'x'));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
+
+
+        private static string ThirtyThird(string s, char c)
+        {
+            return s;
+        }
+
+        private static int ThirtySecond2(string str1, string str2)
+        {
+            int ctr = 0;
+            for (int i = 0; i < str1.Length - 1; i++)
+            {
+                string firstString = str1.Substring(i, 2);
+                for (int j = 0; j < str2.Length - 1; j++)
+                {
+                    string secondString = str2.Substring(j, 2);
+                    if (firstString == secondString)
+                        ctr++;
+                }
+            }
+            return ctr;
+        }
+
+        //Khodam neveshtam
         private static int ThirtySecond(string s1, string s2)
         {
             int counter = 0;
