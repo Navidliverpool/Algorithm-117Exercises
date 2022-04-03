@@ -10,6 +10,8 @@ namespace ConsoleApp11
     {
         static void Main(string[] args)
         {
+            int[] ArrNumForThirtyFirst = { 1, 1, 2, 3, 1 };
+
             Console.WriteLine("First: {0}", First(2, 2));
             Console.WriteLine("---------------------------");
             Console.WriteLine("Second: {0}", Second(53));
@@ -56,7 +58,7 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Seventeenth2: {0}", Seventeenth2("Python"));
             Console.WriteLine("---------------------------");
-            Console.WriteLine("Eighteenth: {0}", Eighteenth(1,2,3));
+            Console.WriteLine("Eighteenth: {0}", Eighteenth(1, 2, 3));
             Console.WriteLine("---------------------------");
             Console.WriteLine("Ninteenth: {0}", Ninteenth(78, 95));
             Console.WriteLine("---------------------------");
@@ -106,9 +108,24 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Thirty2: {0}", Thirty2("abcdsab"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("ThirtyFirst: {0}", ThirtyFirst(ArrNumForThirtyFirst));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static bool ThirtyFirst(int[] n)
+        {
+            for (int i = 0; i < n.Length; i++)
+            {
+                if (n[i] == 1 && n[i + 1] == 2 && n[i + 2] == 3)
+                    return true;
+            }
+            return false;  
+        }
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
         private static int Thirty2(string str)
         {
             string last_two_char = str.Substring(str.Length - 2);
