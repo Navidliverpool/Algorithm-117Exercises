@@ -11,6 +11,7 @@ namespace ConsoleApp11
         static void Main(string[] args)
         {
             int[] ArrNumForThirtyFirst = { 1, 1, 2, 3, 1 };
+            int[] ArrNumForThirtyFifth = { 5, 5, 2, 5, 5 };
 
             Console.WriteLine("First: {0}", First(2, 2));
             Console.WriteLine("---------------------------");
@@ -118,12 +119,50 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("ThirtyThird2: {0}", ThirtyThird2("xxHxix", "x"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("ThirtyFourth: {0}", ThirtyFourth("JavaScript"));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("ThirtyFourth2: {0}", ThirtyFourth2("JavaScript"));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("ThirtyFifth: {0}", ThirtyFifth(ArrNumForThirtyFifth));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
+        private static int ThirtyFifth(int[] nArr)
+        {
+            return 0;
+        }
 
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static string ThirtyFourth2(string str1)
+        {
+            string result = "";
+            for (int i = 0; i < str1.Length; i += 4)
+            {
+                int c = i + 2;
+                int n = 0;
+                n += c > str1.Length ? 1 : 2;
+                result += str1.Substring(i, n);
+            }
+            return result;
+        }
 
-
+        //Khodam neveshtam
+        private static string ThirtyFourth(string s)
+        {
+            string newS = "";
+            for(int i = 0; i < s.Length - 1;)
+            {
+                if (s.Length % 2 == 0)
+                {
+                    newS += s.Substring(i, 2);
+                    i += 4;
+                }
+                else
+                    return newS;
+            }
+            return newS;
+        }
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam.
         private static string ThirtyThird2(string str1, string c)
