@@ -116,11 +116,28 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("ThirtyThird: {0}", ThirtyThird("xxHxix", 'x'));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("ThirtyThird2: {0}", ThirtyThird2("xxHxix", "x"));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
 
 
+
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static string ThirtyThird2(string str1, string c)
+        {
+            for (int i = str1.Length - 2; i > 0; i--)
+            {
+                if (str1[i] == c[0])
+                {
+                    str1 = str1.Remove(i, 1);
+                }
+            }
+
+            return str1;
+        }
 
         //Khodam neveshtam
         private static string ThirtyThird(string s, char c)
