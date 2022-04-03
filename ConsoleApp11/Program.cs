@@ -121,11 +121,25 @@ namespace ConsoleApp11
 
 
 
+
+        //Khodam neveshtam
         private static string ThirtyThird(string s, char c)
         {
-            return s;
+            string newS = "";
+            int j = 0;
+            foreach(char i in s)
+            {
+                if(j != 0 & j != s.Length)
+                {
+                    if (i != c)
+                        newS += i;
+                }
+                j++;
+            }
+            return s[0] + newS + s[s.Length - 1];
         }
 
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
         private static int ThirtySecond2(string str1, string str2)
         {
             int ctr = 0;
