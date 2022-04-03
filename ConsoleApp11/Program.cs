@@ -110,9 +110,23 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("ThirtyFirst: {0}", ThirtyFirst(ArrNumForThirtyFirst));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("ThirtySecond: {0}", ThirtySecond("abcdefgh", "abijsklm"));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
+        private static int ThirtySecond(string s1, string s2)
+        {
+            int counter = 0;
+
+            for (int i = 0; i < s1.Length - 1 || i < s2.Length - 1; i++)
+            {
+               if (s1.Substring(i, 2) == s2.Substring(i, 2))
+                    counter++;
+            }
+
+            return counter;
+        }
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam.
         private static bool ThirtyFirst(int[] n)
