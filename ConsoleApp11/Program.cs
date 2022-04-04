@@ -140,10 +140,16 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("ThistyEighth: {0}", ThistyEighth(5, 4));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("ThistyNinth: {0}", ThistyNinth(14));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
-
+        //Khodam neveshtam
+        private static bool ThistyNinth(int n)
+        {
+            return Math.Abs(n) % 13 == 0 || Math.Abs(n) % 13 == 1 ? true : false;
+        }
 
         //Khodam neveshtam
         private static bool ThistyEighth(int n1, int n2)
