@@ -138,10 +138,18 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("ThistySeventh2: {0}", ThistySeventh2(12, 17));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("ThistyEighth: {0}", ThistyEighth(5, 4));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
 
+
+        //Khodam neveshtam
+        private static bool ThistyEighth(int n1, int n2)
+        {
+            return n1 == 5 || n2 == 5 || n1 + n2 == 5 || Math.Abs(n1 - n2) == 5 ? true : false;
+        }
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam.
         private static int ThistySeventh2(int a, int b)
