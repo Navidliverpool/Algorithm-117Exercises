@@ -130,7 +130,14 @@ namespace ConsoleApp11
 
         private static int ThirtyFifth(int[] nArr)
         {
-            return 0;
+            int counter = 0;
+
+            for (int i = 0; i < nArr.Length - 1; i++)
+            {
+                if (nArr[i] == 5 & (nArr[i + 1] == 5 || nArr[i + 1] == 6))
+                    counter++;
+            }
+            return counter;
         }
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam.
