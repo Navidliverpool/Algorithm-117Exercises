@@ -12,6 +12,7 @@ namespace ConsoleApp11
         {
             int[] ArrNumForThirtyFirst = { 1, 1, 2, 3, 1 };
             int[] ArrNumForThirtyFifth = { 5, 5, 2, 5, 5 };
+            int[] ArrNumForThirtySixth = { 1, 1, 2, 2, 1 };
 
             Console.WriteLine("First: {0}", First(2, 2));
             Console.WriteLine("---------------------------");
@@ -127,7 +128,25 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("ThirtyFifth2: {0}", ThirtyFifth2(ArrNumForThirtyFifth, ArrNumForThirtyFifth.Length));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("ThirtySixth: {0}", ThirtySixth(ArrNumForThirtySixth));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
+        }
+
+        private static bool ThirtySixth(int[] n)
+        {
+            int indexZero = n[0];
+            int counter = 0;
+
+            for (int i = 0; i < n.Length; i++)
+            {
+                if (n[i] == indexZero)
+                    counter++;
+                if (counter == 3)
+                    return true;
+            }
+
+            return false;
         }
 
 
