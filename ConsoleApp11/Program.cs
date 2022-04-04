@@ -128,12 +128,68 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("ThirtyFifth2: {0}", ThirtyFifth2(ArrNumForThirtyFifth, ArrNumForThirtyFifth.Length));
             Console.WriteLine("---------------------------");
-            Console.WriteLine("ThirtySixth: {0}", ThirtySixth(ArrNumForThirtySixth));
+            Console.WriteLine("QuestionFromMe_SimularToThistySixth: {0}", QuestionFromMe_SimularToThistySixth(ArrNumForThirtySixth));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("ThirtySixth: {0}", ThistySixth(ArrNumForThirtySixth));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("ThirtySixth2: {0}", ThistySixth2(ArrNumForThirtySixth, ArrNumForThirtySixth.Length));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("ThistySeventh: {0}", ThistySeventh(12, 17));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("ThistySeventh2: {0}", ThistySeventh2(12, 17));
             Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
-        private static bool ThirtySixth(int[] n)
+
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static int ThistySeventh2(int a, int b)
+        {
+            return a + b >= 10 && a + b <= 20 ? 30 : a + b;
+        }
+
+        //Khodam neveshtam
+        private static int ThistySeventh(int n1, int n2)
+        {
+            int sum = n1 + n2;
+            if (sum >= 10 & sum <= 20)
+                return 30;
+            else
+                return sum;
+        }
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static bool ThistySixth2(int[] nums, int arr_length)
+        {
+            int arra_len = arr_length - 1;
+            int n = 0;
+            for (int i = 0; i < arra_len; i++)
+            {
+                n = nums[i];
+                if (n == nums[i + 1] && n == nums[i + 2]) 
+                    return true;
+            }
+            return false;
+        }
+
+        //Khodam neveshtam
+        //This mothod does not work so I commented out. I do not remove this code because later I may find a developer and get help with it.
+        private static bool ThistySixth(int[] n)
+        {
+
+            //for (int i = 0; i < n.Length - 1; i++)
+            //{
+            //    if (n[i].ToString().Substring(i, 3) == n[i].ToString())
+            //        return true;
+            //}
+            //    return false;
+            return false;
+        }
+
+        //Khodam neveshtam
+        //Question:  Write a C# program to check if a number either in order or not appears three time in an array of integers or not.
+        private static bool QuestionFromMe_SimularToThistySixth(int[] n)
         {
             int indexZero = n[0];
             int counter = 0;
@@ -148,8 +204,6 @@ namespace ConsoleApp11
 
             return false;
         }
-
-
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam.
         private static int ThirtyFifth2(int[] numbers, int arr_length)
