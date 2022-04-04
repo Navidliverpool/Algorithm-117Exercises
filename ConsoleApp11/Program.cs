@@ -125,9 +125,25 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("ThirtyFifth: {0}", ThirtyFifth(ArrNumForThirtyFifth));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("ThirtyFifth2: {0}", ThirtyFifth2(ArrNumForThirtyFifth, ArrNumForThirtyFifth.Length));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
+
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static int ThirtyFifth2(int[] numbers, int arr_length)
+        {
+            int ctr = 0;
+            for (int i = 0; i < arr_length - 1; i++)
+            {
+                if ((numbers[i] == 5 && (numbers[i + 1] == 5)) || (numbers[i] == 5 && (numbers[i + 1] == 6))) ctr++;
+            }
+            return ctr;
+        }
+
+        //Khodam neveshtam
         private static int ThirtyFifth(int[] nArr)
         {
             int counter = 0;
