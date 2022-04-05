@@ -148,9 +148,17 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("FourtyFirst: {0}", FourtyFirst2(8));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("FourtySecond: {0}", FourtySecond(8, 12));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
+
+        //Khodam neveshtam
+        private static int FourtySecond(int n1, int n2)
+        {
+            return (n1 >= 10 & n1 <= 20) || (n2 >= 10 & n2 <= 20) ? 18 : n1 + n2;
+        }
 
         //I do not understand this question.
         //Az "Click me to see the sample solution" tu hamin website neveshtam.
