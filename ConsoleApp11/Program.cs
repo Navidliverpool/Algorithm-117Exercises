@@ -150,9 +150,51 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("FourtySecond: {0}", FourtySecond(8, 12));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("FourtyThird: {0}", FourtyThird("Buzz"));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("FourtyThird2: {0}", FourtyThird2("FizzBuzz"));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
+        //I think this question has an Error. 
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static string FourtyThird2(string str)
+        {
+            if ((str.Substring(0, 1) == "F") && (str.Substring(str.Length - 1, 1) == "B"))
+            {
+                return "FizzBuzz";
+            }
+            else if (str.Substring(0, 1) == "F")
+            {
+                return "Fizz";
+            }
+            else if (str.Substring(str.Length - 1, 1) == "B")
+            {
+                return "Buzz";
+            }
+            else
+            {
+                return str;
+            }
+        }
+
+        //Khodam neveshtam. Ba komak.
+        private static string FourtyThird(string s)
+        {
+            string b = "B";
+
+            for(int i = 1; i < s.Length; i++)
+            {
+                if (s.StartsWith('F'.ToString()) & s.Substring(i, 1) == "B")
+                    return "FizzBuzz";
+            }
+            if (s.StartsWith('B'.ToString()))
+                return "Buzz";
+            if (s.StartsWith('F'.ToString()))
+                return "Fizz";
+            return s;
+        }
 
         //Khodam neveshtam
         private static int FourtySecond(int n1, int n2)
