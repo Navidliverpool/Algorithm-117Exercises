@@ -156,11 +156,30 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("FourtyFourth: {0}", FourtyFourth(1, 2, 3));
             Console.WriteLine("---------------------------");
-            Console.WriteLine("FourtyFourth2: {0}", FourtyFourth2(1, 2, 3));
+            Console.WriteLine("FourtyFourth2: {0}", FourtyFourth2(-1, 1, 0));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("FourtyFifth: {0}", FourtyFifth(1, 2, 3));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("FourtyFifth2: {0}", FourtyFifth2(1, 2, 3));
             Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
+
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static bool FourtyFifth2 (int x, int y, int z)
+        {
+            return x < y && y < z;
+        }
+
+        //Khodam neveshtam.
+        private static bool FourtyFifth(int x, int y, int z)
+        {
+            return y > x & z > y ? true : false;
+        }
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
         private static bool FourtyFourth2(int x, int y, int z)
         {
             return x == y + z || y == x + z || z == x + y;
