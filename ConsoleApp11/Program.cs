@@ -162,10 +162,19 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("FourtyFifth2: {0}", FourtyFifth2(1, 2, 3));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("FourtySixth2: {0}", FourtySixth2(1, 2, 3, true));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
 
+
+        //I found skipping this quesiton would save me time as I do not understand the math part. 
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static bool FourtySixth2(int x, int y, int z, bool flag)
+        {
+            return flag ? x <= y && y <= z : x < y && y < z;
+        }
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam.
         private static bool FourtyFifth2 (int x, int y, int z)
