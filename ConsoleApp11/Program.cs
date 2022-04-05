@@ -156,9 +156,15 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("FourtyFourth: {0}", FourtyFourth(1, 2, 3));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("FourtyFourth2: {0}", FourtyFourth2(1, 2, 3));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
+        private static bool FourtyFourth2(int x, int y, int z)
+        {
+            return x == y + z || y == x + z || z == x + y;
+        }
 
         //Khodam neveshtam.
         private static bool FourtyFourth(int n1, int n2, int n3)
