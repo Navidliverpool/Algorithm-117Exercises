@@ -161,33 +161,21 @@ namespace ConsoleApp11
 
 
         //Khodam neveshtam.
-        private static int FourtyFourth(int n1, int n2, int n3)
+        private static bool FourtyFourth(int n1, int n2, int n3)
         {
             int[] arr = { n1, n2, n3 };
-            int container = 0;
-            for (int i = 0; i < arr.Length; i++)
+            int container = arr[0];
+            for (int i = 1; i < arr.Length; i++)
             {
-                if (i > i + 1)
-                    container = i;
+                if (container < arr[i])
+                    container = arr[i];
             }
 
-            if (container == 0)
-                container = n3;
-
-            if(container == n1 + n2)
+            if (n1 + n2 == container)
             {
-                return n3;
+                return true;
             }
-            if (container == n2 + n3)
-            {
-                return n1;
-            }
-            if (container == n1 + n3)
-            {
-                return n2;
-            }
-
-            return container;
+            return false;
         }
 
         //I think this question has an Error. 
