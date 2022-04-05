@@ -142,7 +142,22 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("ThistyNinth: {0}", ThistyNinth(14));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("Fourty: {0}", Fourty(21));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
+        }
+
+        //Khodam neveshtam
+        private static bool Fourty(int n)
+        {
+            if(Math.Abs(n) % 3 == 0 || Math.Abs(n) % 7 == 0)
+            {
+                if (Math.Abs(n) % 3 == 0 & Math.Abs(n) % 7 == 0)
+                    return false;
+                return true;
+            }
+            return false;
+            //return Math.Abs(n) % 3 == 0 || Math.Abs(n) % 7 == 0 & (Math.Abs(n) % 3 != 0 & Math.Abs(n) % 7 != 0) ? true : false;
         }
 
         //Khodam neveshtam
