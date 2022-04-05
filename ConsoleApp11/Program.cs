@@ -144,7 +144,16 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Fourty: {0}", Fourty(21));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("FourtyP: {0}", Fourty2(3));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
+        }
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static bool Fourty2(int n)
+        {
+            //(^) is called XOR and acts exactly same as XOR Gate in Logic Circuit.
+            return Math.Abs(n) % 3 == 0 ^ Math.Abs(n) % 7 == 0;
         }
 
         //Khodam neveshtam
@@ -157,7 +166,6 @@ namespace ConsoleApp11
                 return true;
             }
             return false;
-            //return Math.Abs(n) % 3 == 0 || Math.Abs(n) % 7 == 0 & (Math.Abs(n) % 3 != 0 & Math.Abs(n) % 7 != 0) ? true : false;
         }
 
         //Khodam neveshtam
