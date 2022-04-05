@@ -150,11 +150,44 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("FourtySecond: {0}", FourtySecond(8, 12));
             Console.WriteLine("---------------------------");
-            Console.WriteLine("FourtyThird: {0}", FourtyThird("Buzz"));
+            Console.WriteLine("FourtyThird: {0}", FourtyThird("FizzBuzz"));
             Console.WriteLine("---------------------------");
             Console.WriteLine("FourtyThird2: {0}", FourtyThird2("FizzBuzz"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("FourtyFourth: {0}", FourtyFourth(1, 2, 3));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
+        }
+
+
+        //Khodam neveshtam.
+        private static int FourtyFourth(int n1, int n2, int n3)
+        {
+            int[] arr = { n1, n2, n3 };
+            int container = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (i > i + 1)
+                    container = i;
+            }
+
+            if (container == 0)
+                container = n3;
+
+            if(container == n1 + n2)
+            {
+                return n3;
+            }
+            if (container == n2 + n3)
+            {
+                return n1;
+            }
+            if (container == n1 + n3)
+            {
+                return n2;
+            }
+
+            return container;
         }
 
         //I think this question has an Error. 
