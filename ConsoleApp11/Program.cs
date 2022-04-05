@@ -164,10 +164,17 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("FourtySixth2: {0}", FourtySixth2(1, 2, 3, true));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("FourtySeventh2: {0}", FourtySeventh2(11, 21, 31));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
         }
 
 
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static bool FourtySeventh2(int x, int y, int z)
+        {
+            return x % 10 == y % 10 || x % 10 == z % 10 || y % 10 == z % 10;
+        }
 
         //I found skipping this quesiton would save me time as I do not understand the math part. 
         //Az "Click me to see the sample solution" tu hamin website neveshtam.
