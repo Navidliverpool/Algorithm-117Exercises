@@ -146,7 +146,17 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("FourtyP: {0}", Fourty2(3));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("FourtyFirst: {0}", FourtyFirst2(8));
+            Console.WriteLine("---------------------------");
             Console.ReadLine();
+        }
+
+
+        //I do not understand this question.
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static bool FourtyFirst2(int n)
+        {
+            return n % 10 <= 2 || n % 10 >= 8;
         }
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam.
