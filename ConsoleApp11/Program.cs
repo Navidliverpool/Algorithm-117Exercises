@@ -176,10 +176,32 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Fifty: {0}", Fifty(13, 33));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("Fifty2: {0}", Fifty2(13, 33));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("FiftyFirst: {0}", FiftyFirst(13, 33));
+            Console.WriteLine("---------------------------");
 
             Console.ReadLine();
         }
 
+
+
+        //Khodam neveshtam.
+        private static int FiftyFirst(int x, int y)
+        {
+            int sum = x + y;
+            if (sum.ToString().Length == x.ToString().Length)
+                return sum;
+            return x;
+        }
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static bool Fifty2(int x, int y)
+        {
+            return x / 10 == y / 10 || x / 10 == y % 10 || x % 10 == y / 10 || x % 10 == y % 10;
+        }
+
+        //Khodam neveshtam.
         private static bool Fifty(int n1, int n2)
         {
             if(n1 >= 10 & n1 <= 99 & n2 >= 10 & n2 <= 99)
