@@ -166,9 +166,41 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("FourtySeventh2: {0}", FourtySeventh2(11, 21, 31));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("FourtyEighth: {0}", FourtyEighth(1, 20, 35));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("FourtyEighth2: {0}", FourtyEighth2(1, 20, 35));
+            Console.WriteLine("---------------------------");
+
             Console.ReadLine();
         }
 
+        private static bool FourtyEighth2(int x, int y, int z)
+        {
+            return Math.Abs(x - y) >= 20 || Math.Abs(x - z) >= 20 ||
+                               Math.Abs(y - z) >= 20;
+        }
+
+        //Khodam neveshtam.
+        //Keili ba ini ke neveshtam haal nemikonam vali hade aghal tu in mesal kar ro dare anjam mide.
+        private static bool FourtyEighth(int n1, int n2, int n3)
+        {
+            int[] arr = {n1, n2, n3};
+            int container = 0;
+            for(int i = 0; i < arr.Length - 1; i++)
+            {
+                if (arr[i] >= 20 & arr[i] <= 25)
+                {
+                    container = arr[i];
+                    arr[i] = arr[i + 1];
+                    for(int j = 0; j < arr.Length - 1; j++)
+                    {
+                        if (arr[j] > container) return true;
+                    }
+                    return false;
+                }
+            }
+            return false;
+        }
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam.
         private static bool FourtySeventh2(int x, int y, int z)
