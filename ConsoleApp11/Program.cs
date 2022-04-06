@@ -182,8 +182,35 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("FiftyFirst2: {0}", FiftyFirst2(13, 33));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("FiftySecond: {0}", FiftySecond(5, 5, 7));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("FiftySecond2: {0}", FiftySecond2(5, 5, 7));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("FiftyThird: {0}", FiftyThird(5, 5, 7));
+            Console.WriteLine("---------------------------");
 
             Console.ReadLine();
+        }
+
+        private static int FiftyThird(int v1, int v2, int v3)
+        {
+            throw new NotImplementedException();
+        }
+
+        private static int FiftySecond2(int x, int y, int z)
+        {
+            if (x == y && y == z) return 0;
+            if (x == y) return z;
+            if (x == z) return y;
+            if (y == z) return x;
+            return x + y + z;
+        }
+
+        //Khodam neveshtam.
+        //Vali oon chizi nist ke soal mikhad.
+        private static int FiftySecond(int x, int y, int z)
+        {
+            return x == y ? (x + y + z) : z;
         }
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam.
