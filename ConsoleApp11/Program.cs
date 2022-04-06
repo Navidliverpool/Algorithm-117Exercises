@@ -174,8 +174,26 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("FourtyNinth2: {0}", FourtyNinth2(11, 21));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("Fifty: {0}", Fifty(13, 33));
+            Console.WriteLine("---------------------------");
 
             Console.ReadLine();
+        }
+
+        private static bool Fifty(int n1, int n2)
+        {
+            if(n1 >= 10 & n1 <= 99 & n2 >= 10 & n2 <= 99)
+            {
+                for(int i = 0; i < n1.ToString().Length; i++)
+                {
+                    for (int j = 0; j < n1.ToString().Length; j++)
+                    {
+                        if (n1.ToString()[i] == n2.ToString()[j])
+                            return true;
+                    }
+                }
+            }
+            return false;
         }
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam.
