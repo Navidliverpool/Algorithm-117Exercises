@@ -170,10 +170,44 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("FourtyEighth2: {0}", FourtyEighth2(1, 20, 35));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("FourtyNinth: {0}", FourtyNinth(11, 21));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("FourtyNinth2: {0}", FourtyNinth2(11, 21));
+            Console.WriteLine("---------------------------");
 
             Console.ReadLine();
         }
 
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static int FourtyNinth2(int x, int y)
+        {
+            if (x == y)
+            {
+                return 0;
+            }
+            else if ((x % 7 == y % 7 && x < y) || x > y)
+            {
+                return x;
+            }
+            else
+            {
+                return y;
+            }
+        }
+
+        //Khodam neveshtam.
+        //Ba taghalob as website fixesh kardam.
+        private static int FourtyNinth(int n1, int n2)
+        {
+            if (n1 == n2)
+                return 0;
+            if (n1 % 7 == n2 % 7 & n1 < n2 || n1 > n2)
+                return n1;
+            return n2;
+        }
+
+        //The question is not clear to me.
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
         private static bool FourtyEighth2(int x, int y, int z)
         {
             return Math.Abs(x - y) >= 20 || Math.Abs(x - z) >= 20 ||
