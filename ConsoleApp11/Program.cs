@@ -180,11 +180,18 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("FiftyFirst: {0}", FiftyFirst(13, 33));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("FiftyFirst2: {0}", FiftyFirst2(13, 33));
+            Console.WriteLine("---------------------------");
 
             Console.ReadLine();
         }
 
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static int FiftyFirst2(int x, int y)
+        {
+            return (x + y).ToString().Length > x.ToString().Length ? x : x + y;
 
+        }
 
         //Khodam neveshtam.
         private static int FiftyFirst(int x, int y)
