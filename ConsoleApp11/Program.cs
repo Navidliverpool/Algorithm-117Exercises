@@ -186,17 +186,47 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("FiftySecond2: {0}", FiftySecond2(5, 5, 7));
             Console.WriteLine("---------------------------");
-            Console.WriteLine("FiftyThird: {0}", FiftyThird(5, 5, 7));
+            Console.WriteLine("FiftyThird: {0}", FiftyThird(5, 5, 13));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("FiftyThird2: {0}", FiftyThird2(5, 5, 13));
             Console.WriteLine("---------------------------");
 
             Console.ReadLine();
         }
 
-        private static int FiftyThird(int v1, int v2, int v3)
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static int FiftyThird2(int x, int y, int z)
         {
-            throw new NotImplementedException();
+            if (x == 13) return 0;
+            if (y == 13) return x;
+            if (z == 13) return x + y;
+            return x + y + z;
         }
 
+        //Khodam neveshtam.
+        //I have modified this question a bit.
+        //Qustion: Write a C# program to compute the sum of the three integers.
+        //If one of the values is 13 (x is 13 return 0) return the sum of the numbers before reaching the number 13.
+        private static int FiftyThird(int x, int y, int z)
+        {
+            int[] arr = { x, y, z };
+            int container = 0;
+            if (arr[0] == 13)
+                return 0;
+            if (x != 13 & y != 13 & z != 13)
+                return x + y + z;
+            for (int i = 1; i < arr.Length; i++)
+            {
+                if (arr[i] == 13)
+                    for (int j = 0; j < i; j++)
+                    {
+                        container += arr[j];
+                    }
+            }
+            return container;
+        }
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
         private static int FiftySecond2(int x, int y, int z)
         {
             if (x == y && y == z) return 0;
