@@ -194,10 +194,21 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("FiftyFourth2: {0}", FiftyFourth2(5, 5, 11));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("FiftyFifth: {0}", FiftyFifth(10, 11));
+            Console.WriteLine("---------------------------");
 
             Console.ReadLine();
         }
 
+        //Khodam neveshtam.
+        private static int FiftyFifth(int x, int y)
+        {
+            if (x > 13 & y > 13)
+                return 0;
+            return (x > y & x < 13) ? x : y;
+        }
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
         private static int FiftyFourth2(int x, int y, int z)
         {
             return FiftyFourth2Engine(x) + FiftyFourth2Engine(y) + FiftyFourth2Engine(z);
@@ -226,8 +237,6 @@ namespace ConsoleApp11
             }
             return x + y + z;
         }
-
-
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam.
         private static int FiftyThird2(int x, int y, int z)
