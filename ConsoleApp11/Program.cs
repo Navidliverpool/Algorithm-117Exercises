@@ -214,8 +214,17 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("FiftyNinth2: {0}", FiftyNinth2("chetory"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("Sixty: {0}", Sixty("chetory"));
+            Console.WriteLine("---------------------------");
 
             Console.ReadLine();
+        }
+
+
+        private static string Sixty(string s)
+        {
+            string newS = s.Substring(0, 2);
+            return newS.Length >= 2 ? newS : s;
         }
 
         private static string FiftyNinth2(string s1)
