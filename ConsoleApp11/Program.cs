@@ -234,17 +234,25 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("SixtyFifth: {0}", SixtyFifth("Hello"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("SixtyFifth2: {0}", SixtyFifth2("Hello"));
+            Console.WriteLine("---------------------------");
 
             Console.ReadLine();
         }
 
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static string SixtyFifth2(string s1)
+        {
+            string s2 = s1;
+            return s1.Remove(0, 2) + s2.Substring(0, 2);
+        }
+
+        //Khodam neveshtam.
         private static string SixtyFifth(string s)
         {
             string newS = s.Substring(0, 2);
             return s.Length > 2 ? s.Substring(2) + newS : s;
         }
-
-
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam.
         private static string SixtyFourth2(string s1, string s2)
