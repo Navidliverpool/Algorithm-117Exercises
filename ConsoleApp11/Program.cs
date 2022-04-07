@@ -204,10 +204,19 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("FiftySeventh: {0}", FiftySeventh("salam", "chetory"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("FiftySeventh2: {0}", FiftySeventh2("salam", "chetory"));
+            Console.WriteLine("---------------------------");
 
             Console.ReadLine();
         }
 
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static string FiftySeventh2(string s1, string s2)
+        {
+            return s1 + s2 + s2 + s1;
+        }
+
+        //Khodam neveshtam.
         private static string FiftySeventh(string s1, string s2)
         {
             string newS = "";
