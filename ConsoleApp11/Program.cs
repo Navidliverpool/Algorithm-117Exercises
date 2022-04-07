@@ -190,9 +190,32 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("FiftyThird2: {0}", FiftyThird2(5, 5, 13));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("FiftyFourth: {0}", FiftyFourth(5, 5, 13));
+            Console.WriteLine("---------------------------");
 
             Console.ReadLine();
         }
+
+        //Khodam neveshtam.
+        //Yezare moshkel dare vali eshkalatesh mohem nist.
+        private static int FiftyFourth(int x, int y, int z)
+        {
+            if(x >= 10 & x <= 20)
+            {
+                x = 0;
+            }
+            if(y >= 10 & y <= 20)
+            {
+                y = 0;
+            }
+            if(z >= 10 & z <= 20)
+            {
+                z = 0;
+            }
+            return x + y + z;
+        }
+
+
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam.
         private static int FiftyThird2(int x, int y, int z)
