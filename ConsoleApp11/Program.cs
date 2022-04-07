@@ -196,8 +196,18 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("FiftyFifth: {0}", FiftyFifth(10, 11));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("FiftyFifth2: {0}", FiftyFifth2(10, 11));
+            Console.WriteLine("---------------------------");
 
             Console.ReadLine();
+        }
+
+        private static int FiftyFifth2(int x, int y)
+        {
+            if (x > 13 && y > 13) return 0;
+            if (x <= 13 && y > 13) return x;
+            if (y <= 13 && x > 13) return y;
+            return x > y ? x : y;
         }
 
         //Khodam neveshtam.
