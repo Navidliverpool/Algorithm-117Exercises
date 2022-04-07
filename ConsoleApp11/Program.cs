@@ -216,23 +216,33 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Sixty: {0}", Sixty("chetory"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("Sixty2: {0}", Sixty2("chetory"));
+            Console.WriteLine("---------------------------");
 
             Console.ReadLine();
         }
 
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static string Sixty2(string s1)
+        {
+            return s1.Length < 2 ? s1 : s1.Substring(0, 2);
+        }
 
+        //Khodam neveshtam.
         private static string Sixty(string s)
         {
             string newS = s.Substring(0, 2);
             return newS.Length >= 2 ? newS : s;
         }
 
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
         private static string FiftyNinth2(string s1)
         {
             string last2 = s1.Substring(s1.Length - 2);
             return last2 + last2 + last2;
         }
 
+        //Khodam neveshtam.
         private static string FiftyNinth(string s)
         {
             string newS = "";
