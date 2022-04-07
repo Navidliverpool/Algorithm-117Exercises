@@ -208,10 +208,41 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("FiftyEighth: {0}", FiftyEighth("[[]]", "chetory"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("FiftyEighth2: {0}", FiftyEighth2("[[]]", "chetory"));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("FiftyNinth: {0}", FiftyNinth("chetory"));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("FiftyNinth2: {0}", FiftyNinth2("chetory"));
+            Console.WriteLine("---------------------------");
 
             Console.ReadLine();
         }
 
+        private static string FiftyNinth2(string s1)
+        {
+            string last2 = s1.Substring(s1.Length - 2);
+            return last2 + last2 + last2;
+        }
+
+        private static string FiftyNinth(string s)
+        {
+            string newS = "";
+            int n = 1;
+            while(n <= 3)
+            {
+                newS += s.Substring(s.Length - 2, 2);
+                n++;
+            }
+            return newS;
+        }
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static string FiftyEighth2(string s1, string word)
+        {
+            return s1.Substring(0, 2) + word + s1.Substring(2);
+        }
+
+        //Khodam neveshtam.
         private static string FiftyEighth(string s1, string s2)
         {
             int middle = (s1.Length / 2) - 1;
@@ -227,8 +258,6 @@ namespace ConsoleApp11
             }
             return newS;
         }
-
-
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam.
         private static string FiftySeventh2(string s1, string s2)
