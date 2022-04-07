@@ -202,11 +202,17 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("FiftySixth2: {0}", FiftySixth2(10, 11, 12));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("FiftySeventh: {0}", FiftySeventh("salam", "chetory"));
+            Console.WriteLine("---------------------------");
 
             Console.ReadLine();
         }
 
-
+        private static string FiftySeventh(string s1, string s2)
+        {
+            string newS = "";
+            return newS = s1 + s2 + s2 + s1;
+        }
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam.
         private static bool FiftySixth2(int x, int y, int z)
