@@ -192,8 +192,20 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("FiftyFourth: {0}", FiftyFourth(5, 5, 13));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("FiftyFourth2: {0}", FiftyFourth2(5, 5, 11));
+            Console.WriteLine("---------------------------");
 
             Console.ReadLine();
+        }
+
+        private static int FiftyFourth2(int x, int y, int z)
+        {
+            return FiftyFourth2Engine(x) + FiftyFourth2Engine(y) + FiftyFourth2Engine(z);
+        }
+
+        private static int FiftyFourth2Engine(int n)
+        {
+            return (n >= 10 & n <= 13 || n >= 17 & n <= 20) ? 0: n;
         }
 
         //Khodam neveshtam.
