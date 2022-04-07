@@ -218,8 +218,25 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("Sixty2: {0}", Sixty2("chetory"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("SixtyFirst: {0}", SixtyFirst("Hello"));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("SixtyFirst2: {0}", SixtyFirst2("Hello"));
+            Console.WriteLine("---------------------------");
 
             Console.ReadLine();
+        }
+
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static string SixtyFirst2(string s)
+        {
+            return s.Substring(0, s.Length / 2);
+        }
+
+        //Khodam neveshtam.
+        private static string SixtyFirst(string s)
+        {
+            return s.Substring(0, s.Length / 2);
         }
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam.
