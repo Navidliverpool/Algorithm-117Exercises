@@ -198,10 +198,34 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("FiftyFifth2: {0}", FiftyFifth2(10, 11));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("FiftySixth: {0}", FiftySixth(10, 11, 12));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("FiftySixth2: {0}", FiftySixth2(10, 11, 12));
+            Console.WriteLine("---------------------------");
 
             Console.ReadLine();
         }
 
+
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static bool FiftySixth2(int x, int y, int z)
+        {
+            if (x > y && x > z && y > z) return x - y == y - z;
+            if (x > y && x > z && z > y) return x - z == z - y;
+            if (y > x && y > z && x > z) return y - x == x - z;
+            if (y > x && y > z && z > x) return y - z == z - x;
+            if (z > x && z > y && x > y) return z - x == x - y;
+            return z - y == y - x;
+        }
+
+        //Khodam neveshtam.
+        private static bool FiftySixth(int x, int y, int z)
+        {
+            return (z - y) == (y - x) ? true : false;
+        }
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
         private static int FiftyFifth2(int x, int y)
         {
             if (x > 13 && y > 13) return 0;
