@@ -224,10 +224,44 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("SixtySecond: {0}", SixtySecond("Hello"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("SixtySecond2: {0}", SixtySecond2("Hello"));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("SixtyThird: {0}", SixtyThird("Hell", "Hello"));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("SixtyThird2: {0}", SixtyThird2("Hell", "Hello"));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("SixtyFourth: {0}", SixtyFourth2("Hell", "Hello"));
+            Console.WriteLine("---------------------------");
 
             Console.ReadLine();
         }
 
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static string SixtyFourth2(string s1, string s2)
+        {
+            return s1.Substring(1) + s2.Substring(1);
+        }
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static string SixtyThird2(string s1, string s2)
+        {
+            return s1.Length > s2.Length ? s1 + s2 + s1 : s2 + s1 + s2;
+        }
+
+        //Khodam neveshtam.
+        private static string SixtyThird(string s1, string s2)
+        {
+            return s1.Length > s2.Length ? s1 + s2 + s1 : s2 + s1 + s2;
+        }
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static string SixtySecond2(string s1)
+        {
+
+            return s1.Substring(1).Substring(0, s1.Length - 2);
+        }
+
+        //Khodam neveshtam.
         private static string SixtySecond(string s)
         {
             return s.Length < 2 ? s : s.Substring(1, s.Length - 2);
