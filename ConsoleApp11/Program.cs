@@ -232,9 +232,19 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("SixtyFourth: {0}", SixtyFourth2("Hell", "Hello"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("SixtyFifth: {0}", SixtyFifth("Hello"));
+            Console.WriteLine("---------------------------");
 
             Console.ReadLine();
         }
+
+        private static string SixtyFifth(string s)
+        {
+            string newS = s.Substring(0, 2);
+            return s.Length > 2 ? s.Substring(2) + newS : s;
+        }
+
+
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam.
         private static string SixtyFourth2(string s1, string s2)
