@@ -222,10 +222,16 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("SixtyFirst2: {0}", SixtyFirst2("Hello"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("SixtySecond: {0}", SixtySecond("Hello"));
+            Console.WriteLine("---------------------------");
 
             Console.ReadLine();
         }
 
+        private static string SixtySecond(string s)
+        {
+            return s.Length < 2 ? s : s.Substring(1, s.Length - 2);
+        }
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam.
         private static string SixtyFirst2(string s)
