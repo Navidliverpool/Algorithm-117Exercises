@@ -206,9 +206,29 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("FiftySeventh2: {0}", FiftySeventh2("salam", "chetory"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("FiftyEighth: {0}", FiftyEighth("[[]]", "chetory"));
+            Console.WriteLine("---------------------------");
 
             Console.ReadLine();
         }
+
+        private static string FiftyEighth(string s1, string s2)
+        {
+            int middle = (s1.Length / 2) - 1;
+            string newS = "";
+            if(s1.Length == 4)
+            {
+                for(int i = 0; i < s1.Length; i++)
+                {
+                    newS += s1[i];
+                    if (i == middle)
+                        newS += s2;
+                }
+            }
+            return newS;
+        }
+
+
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam.
         private static string FiftySeventh2(string s1, string s2)
