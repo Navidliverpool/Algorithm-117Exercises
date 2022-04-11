@@ -240,8 +240,16 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("SixtyEighth: {0}", SixtyEighth("Hello", 2));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("SixtyEighth2: {0}", SixtyEighth2("Hello", 2));
+            Console.WriteLine("---------------------------");
 
             Console.ReadLine();
+        }
+
+        private static string SixtyEighth2(string s, int n)
+        {
+            return s.Substring(0, n) + s.Substring(s.Length - n);
+
         }
 
         //Khodam neveshtam.
@@ -250,7 +258,6 @@ namespace ConsoleApp11
 
             return s.Substring(0, x) + s.Substring(s.Length - x, x);
         }
-
 
         //Khodam neveshtam.
         private static string SixtySeventh(string s)
