@@ -236,8 +236,16 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("SixtyFifth2: {0}", SixtyFifth2("Hello"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("SixtySeventh: {0}", SixtySeventh("Hell"));
+            Console.WriteLine("---------------------------");
 
             Console.ReadLine();
+        }
+
+        //Khodam neveshtam.
+        private static string SixtySeventh(string s)
+        {
+            return s.Length > 2 & s.Length % 2 == 0 ? s.Substring(s.Length / 2 - 1, 2) : s;
         }
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam.
