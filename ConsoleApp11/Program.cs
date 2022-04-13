@@ -242,10 +242,28 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("SixtyEighth2: {0}", SixtyEighth2("Hello", 2));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("SixtyNinth2: {0}", SixtyNinth2("Hello", 2));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("Seventy: {0}", Seventy("Hello", 2));
+            Console.WriteLine("---------------------------");
 
             Console.ReadLine();
         }
 
+
+        //Khodam neveshtam.
+        private static int Seventy(string v1, int v2)
+        {
+            return 0;
+        }
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static string SixtyNinth2(string s1, int index)
+        {
+            return index + 2 <= s1.Length ? s1.Substring(index, 2) : s1.Substring(0, 2);
+        }
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
         private static string SixtyEighth2(string s, int n)
         {
             return s.Substring(0, n) + s.Substring(s.Length - n);
