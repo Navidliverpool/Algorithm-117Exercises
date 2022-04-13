@@ -244,17 +244,18 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("SixtyNinth2: {0}", SixtyNinth2("Hello", 2));
             Console.WriteLine("---------------------------");
-            Console.WriteLine("Seventy: {0}", Seventy("Hello", 2));
+            Console.WriteLine("Seventy: {0}", Seventy("Helloabcde"));
             Console.WriteLine("---------------------------");
 
             Console.ReadLine();
         }
 
 
+
         //Khodam neveshtam.
-        private static int Seventy(string v1, int v2)
+        private static string Seventy(string s)
         {
-            return 0;
+            return (s.Length / 2) + 3 <= s.Length ? s.Substring(s.Length / 2, 3) : s;
         }
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam.
