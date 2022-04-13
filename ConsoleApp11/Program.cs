@@ -244,7 +244,9 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("SixtyNinth2: {0}", SixtyNinth2("Hello", 2));
             Console.WriteLine("---------------------------");
-            Console.WriteLine("Seventy: {0}", Seventy("Helloabcde"));
+            Console.WriteLine("Seventy: {0}", Seventy("Hello"));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("SeventyFirst: {0}", SeventyFirst("Hello"));
             Console.WriteLine("---------------------------");
 
             Console.ReadLine();
@@ -252,10 +254,22 @@ namespace ConsoleApp11
 
 
 
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static string SeventyFirst(string s)
+        {
+            return s.Substring((s.Length - 1) / 2 - 1, 3);
+        }
+
         //Khodam neveshtam.
+        //Vali benazar miad efficient naneveshtam.
         private static string Seventy(string s)
         {
-            return (s.Length / 2) + 3 <= s.Length ? s.Substring(s.Length / 2, 3) : s;
+            if ((s.Length % 2 != 0) & (s.Length / 2) - 1 + 3 <= s.Length)
+                return s.Substring((s.Length / 2) - 1, 3);
+
+            else if ((s.Length % 2 == 0) & (s.Length / 2) - 1 + 3 <= s.Length)
+                return s.Substring((s.Length / 2), 3);
+            return s.Substring((s.Length / 2), 3);
         }
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam.
