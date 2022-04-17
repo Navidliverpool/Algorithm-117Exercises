@@ -248,11 +248,19 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("SeventyFirst: {0}", SeventyFirst("Hello"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("SeventySecond: {0}", SeventySecond("Hello", "Hi"));
+            Console.WriteLine("---------------------------");
+  
 
             Console.ReadLine();
         }
 
 
+        //Khodam neveshtam.
+        private static string SeventySecond(string x, string y)
+        {
+            return x.Length == 0 & y.Length == 0 ? "#" : x.Substring(0, 1) + y.Substring(y.Length - 1, 1);
+        }
 
         //Az "Click me to see the sample solution" tu hamin website neveshtam.
         private static string SeventyFirst(string s)
