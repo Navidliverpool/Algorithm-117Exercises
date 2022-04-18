@@ -250,13 +250,47 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("SeventySecond: {0}", SeventySecond("Hello", "Hi"));
             Console.WriteLine("---------------------------");
-  
+            Console.WriteLine("SeventySecond2: {0}", SeventySecond2("Hello", "Hi"));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("SeventyThird2: {0}", SeventyThird2("Hello"));
+            Console.WriteLine("---------------------------");
 
             Console.ReadLine();
         }
 
+        private static string SeventyThird2(string s)
+        {
+            return s.Substring(0, s.Length - 2) + s[s.Length - 1] + s[s.Length - 2];
+        }
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static string SeventySecond2(string x, string y)
+        {
+            string lastChars = "";
+
+            if (x.Length > 0)
+            {
+                lastChars += x.Substring(0, 1);
+            }
+            else
+            {
+                lastChars += "#";
+            }
+
+            if (y.Length > 0)
+            {
+                lastChars += y.Substring(y.Length - 1);
+            }
+            else
+            {
+                lastChars += "#";
+            }
+
+            return lastChars;
+        }
 
         //Khodam neveshtam.
+        //Yejurai ghalat neveshtam.
         private static string SeventySecond(string x, string y)
         {
             return x.Length == 0 & y.Length == 0 ? "#" : x.Substring(0, 1) + y.Substring(y.Length - 1, 1);
