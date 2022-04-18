@@ -254,8 +254,16 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("SeventyThird2: {0}", SeventyThird2("Hello"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("SeventyForth: {0}", SeventyForth("abcabc"));
+            Console.WriteLine("---------------------------");
 
             Console.ReadLine();
+        }
+
+        //Khodam neveshtam.
+        private static string SeventyForth(string s)
+        {
+            return s.StartsWith("xyz") || s.StartsWith("abc") ? "abc" : " ";
         }
 
         private static string SeventyThird2(string s)
