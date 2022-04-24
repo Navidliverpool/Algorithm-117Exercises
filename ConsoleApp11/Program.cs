@@ -256,8 +256,25 @@ namespace ConsoleApp11
             Console.WriteLine("---------------------------");
             Console.WriteLine("SeventyForth: {0}", SeventyForth("abcabc"));
             Console.WriteLine("---------------------------");
+            Console.WriteLine("SeventyFifth: {0}", SeventyFifth("abca"));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("SeventyFifth2: {0}", SeventyFifth2("abca"));
+            Console.WriteLine("---------------------------");
 
             Console.ReadLine();
+        }
+
+
+        //Az "Click me to see the sample solution" tu hamin website neveshtam.
+        private static bool SeventyFifth2(string s)
+        {
+            return s.Substring(0, 2) == s.Substring(s.Length - 2);
+        }
+
+        //Khodam neveshtam.
+        private static bool SeventyFifth(string s)
+        {
+            return s.Substring(0, 2) == s.Substring(s.Length - 2, 2) ? true : false;
         }
 
         //Khodam neveshtam.
